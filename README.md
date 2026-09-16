@@ -2,18 +2,37 @@
 
 ✨ **一個結合現代毛玻璃視覺美學 (Glassmorphism)、高精度即時時鐘、個人簡介與作品集展示的動態個人首頁。**
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![Live Demo](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-2ea44f?style=flat&logo=github&logoColor=white)](https://cheeefds.github.io/0916/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 ---
 
+## 📑 目錄 (Table of Contents)
+
+- [🔗 線上展示 (Live Demo)](#-線上展示-live-demo)
+- [👤 個人簡介 (About Me)](#-個人簡介-about-me)
+- [⚡ 專業技能 (Skills)](#-專業技能-skills)
+- [🚀 專案作品 (Projects)](#-專案作品-projects)
+- [🌟 核心功能亮點 (Key Features)](#-核心功能亮點-key-features)
+- [🛠️ 技術棧 (Tech Stack)](#️-技術棧-tech-stack)
+- [📁 專案結構 (Directory Structure)](#-專案結構-directory-structure)
+- [🚀 快速啟動 (Quick Start)](#-快速啟動-quick-start)
+- [📝 DIC(Do In Class 1)-課堂實作總結](#-dicdo-in-class-1-課堂實作總結)
+- [📄 授權條款 (License)](#-授權條款-license)
+
+---
+
 ## 🔗 線上展示 (Live Demo)
 
-- **Demo 連結**：[https://cheeefds.github.io/0916/](https://cheeefds.github.io/0916/)
+- **線上展示網址**：[https://cheeefds.github.io/0916/](https://cheeefds.github.io/0916/)
+- **專案原始碼**：[https://github.com/cheeefds/0916](https://github.com/cheeefds/0916)
 
-![Demo Snapshot](assets/demo_snapshot.png)
+<div align="center">
+  <img src="assets/demo_snapshot.png" alt="Demo Snapshot" width="850" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.3);">
+</div>
 
 ---
 
@@ -24,7 +43,7 @@
 - **科系 / 專長**：**資工系**、**休息**
 - **簡短自我介紹**：
   > **「我是吳誠哲：你好」**  
-  就讀資工系，喜愛簡約洗鍊的系統架構與技術實作。在專注寫 code 與研究技術之餘，深刻認同「適度休息」才是保持高效率與長遠創造力的關鍵專長。
+  > 就讀資工系，喜愛簡約洗鍊的系統架構與技術實作。在專注寫 code 與研究技術之餘，深刻認同「適度休息」才是保持高效率與長遠創造力的關鍵專長。
 
 ---
 
@@ -41,20 +60,20 @@
 
 ---
 
-## 🚀 3. Projects (作品與專案展示)
+## 🚀 專案作品 (Projects)
 
 ### 📌 Project 1: 個人即時動態時鐘與資訊入口網 (Personal Portal & Clock Hub)
-- **Project Name**：個人即時動態時鐘與資訊入口網
-- **Project Description**：專為吳誠哲打造之個人數位品牌門面。整合現代毛玻璃 (Glassmorphism) 視覺體系、20fps 毫秒級高精度動態時鐘運算、跨時區世界時間與全響應式互動體驗。
+- **專案名稱**：個人即時動態時鐘與資訊入口網
+- **專案簡介**：專為吳誠哲打造之個人數位品牌門面。整合現代毛玻璃 (Glassmorphism) 視覺體系、20fps 毫秒級高精度動態時鐘運算、跨時區世界時間與全響應式互動體驗。
 - **使用技術**：`HTML5`、`CSS3 (Glassmorphism, RWD)`、`JavaScript (ES6+)`、`Intl API`、`GitHub Pages`
-- **GitHub Link**：[https://github.com/cheeefds/0916](https://github.com/cheeefds/0916)
+- **GitHub 連結**：[https://github.com/cheeefds/0916](https://github.com/cheeefds/0916)
 - **Live Demo**：[https://cheeefds.github.io/0916/](https://cheeefds.github.io/0916/)
 
 ### 📌 Project 2: 智慧時序數據分析與異常偵測系統 (Smart Time-Series ML Model) *(本學期預計完成)*
-- **Project Name**：智慧時序數據分析與異常偵測系統
-- **Project Description**：結合資工系專業，以 Python 深度學習架構結合 C/C++ 演算法加速模組，針對時間序列數據進行特徵提取、異常模式識別與未來趨勢智慧預測。
+- **專案名稱**：智慧時序數據分析與異常偵測系統
+- **專案簡介**：結合資工系專業，以 Python 深度學習架構結合 C/C++ 演算法加速模組，針對時間序列數據進行特徵提取、異常模式識別與未來趨勢智慧預測。
 - **使用技術**：`Python`、`C / C++`、`Machine Learning`、`PyTorch / Scikit-Learn`
-- **GitHub Link**：[https://github.com/cheeefds](https://github.com/cheeefds)
+- **GitHub 連結**：[https://github.com/cheeefds](https://github.com/cheeefds)
 
 ---
 
@@ -63,7 +82,7 @@
 ### 1. ⏱️ 實時高精度時鐘 (Live Precision Clock)
 - **毫秒級數字時鐘**：流暢顯示時、分、秒與毫秒演進。
 - **雙制式切換**：支援 24 小時制 (`24H`) 與 12 小時制 (`12H AM/PM`) 自由切換。
-- **完整日期與時區**：支援 Traditional Chinese 格式（年/月/日/星期）與 `Asia/Taipei` (UTC+8) 時區顯示。
+- **完整日期與時區**：支援繁體中文格式（年/月/日/星期）與 `Asia/Taipei` (UTC+8) 時區顯示。
 
 ### 2. 📊 時間維度與指標 (Time Metrics)
 - **年度進度條 (Year Progress %)**：即時算出一整年已過去的百分比。
@@ -74,17 +93,20 @@
 - 內建四區即時時鐘連動：**台北 (Taipei)**、**東京 (Tokyo)**、**倫敦 (London)**、**紐約 (New York)**。
 
 ### 4. 🎨 視覺美學與主題切換 (Design System)
-- **深/淺色主題 toggle**：可隨時在「賽博深色毛玻璃 (Cyberpunk Dark)」與「極簡純白 (Modern Light)」主題間切換。
-- **每日時間感悟**：收錄時間金句，提供互動換句體驗。
+- **深/淺色主題 Toggle**：可隨時在「賽博深色毛玻璃 (Cyberpunk Dark)」與「極簡純白 (Modern Light)」主題間切換。
+- **每日時間感悟**：收錄時間金句，提供點擊隨機換句的互動體驗。
 
 ---
 
 ## 🛠️ 技術棧 (Tech Stack)
 
-- **前端核心**：HTML5, Vanilla JavaScript (ES6+)
-- **樣式設計**：CSS3 (CSS Variables, Flexbox, CSS Grid, Modern Backdrop-Filter)
-- **字型庫**：Google Fonts ([Outfit](https://fonts.google.com/specimen/Outfit), [Noto Sans TC](https://fonts.google.com/specimen/Noto+Sans+TC), [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono))
-- **圖示庫**：[FontAwesome 6](https://fontawesome.com/)
+| 領域 | 使用技術 |
+| :--- | :--- |
+| **前端核心** | HTML5, Vanilla JavaScript (ES6+) |
+| **樣式設計** | CSS3 (CSS Custom Properties, Flexbox, CSS Grid, Backdrop-Filter) |
+| **字型資源** | Google Fonts ([Outfit](https://fonts.google.com/specimen/Outfit), [Noto Sans TC](https://fonts.google.com/specimen/Noto+Sans+TC), [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)) |
+| **圖示庫** | [FontAwesome 6](https://fontawesome.com/) |
+| **版本控制與部署** | Git, GitHub, GitHub Pages |
 
 ---
 
@@ -92,14 +114,14 @@
 
 ```text
 personal page/
-├── index.html          # 主頁面結構與語意標籤
-├── styles.css          # 全局樣式、毛玻璃特效與深淺主題變數
-├── script.js           # 時間引擎、動態數據計算與互動事件處理
-├── assets/             # 圖像資源
-│   ├── avatar.jpg      # 個人專屬頭像
+├── index.html            # 主頁面結構與語意標籤
+├── styles.css            # 全域樣式、毛玻璃特效與深淺主題變數
+├── script.js             # 時間引擎、動態數據計算與互動事件處理
+├── assets/               # 圖像靜態資源
+│   ├── avatar.jpg        # 個人專屬頭像
 │   ├── demo_snapshot.png # 網頁展示截圖
-│   └── hero_bg.jpg     # 深色視覺背景圖
-└── README.md           # 專案說明文件
+│   └── hero_bg.jpg       # 深色科技背景圖
+└── README.md             # 專案說明文件
 ```
 
 ---
@@ -166,7 +188,7 @@ flowchart TD
 
 | 階段 | 工作重點 | 具體成果與產出 |
 | :--- | :--- | :--- |
-| **一、需求分析** | 明確個人品牌與功能訴求 | 定義核心展示項目（姓名：吳誠哲、科系：資工系、專長：休息、自我介紹、3項技能、專案作品、毫秒級時鐘與指標）。 |
+| **一、需求分析** | 明確個人品牌與功能訴求 | 定義核心展示項目（姓名：吳誠哲、科系：資工系、專長：休息、自我介紹、3 項技能、專案作品、毫秒級時鐘與指標）。 |
 | **二、視覺與素材** | 建立暗黑科技與毛玻璃風格 | 產生專屬質感深色霓虹幾何背景 (`hero_bg.jpg`) 與個人頭像風格圖 (`avatar.jpg`)。 |
 | **三、版面架構 (HTML/CSS)** | 建立語意化標籤與響應式排版 | 使用 HTML5 語意標籤與 CSS Grid/Flexbox 完成卡片網格；採用 `backdrop-filter` 實現現代毛玻璃 (Glassmorphism) 效果。 |
 | **四、功能邏輯 (JavaScript)** | 即時運算與互動機制實作 | 1. 20fps 高精度即時時鐘（包含毫秒顯示與 12H/24H 切換）。<br>2. 智慧時段問候語（早安 / 午安 / 晚安）。<br>3. 年度與當日時間進度百分比計算。<br>4. 跨時區世界時鐘（台北、東京、倫敦、紐約）。<br>5. 深色／淺色主題即時切換系統。<br>6. 時間感悟語錄隨機切換。 |
@@ -187,5 +209,3 @@ flowchart TD
 ## 📄 授權條款 (License)
 
 本專案採用 [MIT License](LICENSE) 授權發行。
-#   0 9 1 6  
- 
