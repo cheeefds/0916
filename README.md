@@ -98,7 +98,7 @@ personal page/
 
 ---
 
-## 📝 開發成果總結與工作流程 (Project Summary & Workflow)
+## 📝 DIC(Do In Class 1)-課堂實作總結
 
 > 本章節為本次個人專案作業開發流程與成果總結，展示從需求分析到部署上線的完整流程。
 
