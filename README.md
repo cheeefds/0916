@@ -9,6 +9,14 @@
 
 ---
 
+## 🔗 線上展示 (Live Demo)
+
+- **Demo 連結**：[https://cheeefds.github.io/0916/](https://cheeefds.github.io/0916/)
+
+![Demo Snapshot](assets/demo_snapshot.png)
+
+---
+
 ## 📖 簡介 (Overview)
 
 本專頁專為 **吳誠哲 (Wu Cheng-Che)** 設計，打造極致流暢的個人品牌數位門面。除了展現個人專業領域與社群連結之外，核心整合了高精度的動態時間計算引擎，讓時間不只是數字，更成為視覺化的生活指標。
@@ -59,6 +67,7 @@ personal page/
 ├── script.js           # 時間引擎、動態數據計算與互動事件處理
 ├── assets/             # 圖像資源
 │   ├── avatar.jpg      # 個人專屬頭像
+│   ├── demo_snapshot.png # 網頁展示截圖
 │   └── hero_bg.jpg     # 深色視覺背景圖
 └── README.md           # 專案說明文件
 ```
