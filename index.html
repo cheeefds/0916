@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="吳誠哲的個人首頁 - 即時時間顯示與個人資訊展示">
-  <title>吳誠哲 | Personal Hub & Live Time</title>
-
+  <meta name="description" content="吳誠哲的個人首頁 - 資工系、即時動態時鐘與專案展示">
+  <title>吳誠哲 | Personal Hub & Projects</title>
+  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="dark-theme">
   <!-- Background Glow & Particle Canvas -->
   <div class="bg-container">
@@ -48,180 +44,296 @@
 
     <!-- Main Content Grid -->
     <main class="main-container">
-
-      <!-- Profile Hero Card -->
-      <section class="card profile-card" id="profileCard">
-        <div class="card-glass-glow"></div>
-        <div class="profile-header">
-          <div class="avatar-wrapper">
-            <img src="assets/avatar.jpg" alt="吳誠哲的大頭照" class="avatar-img" id="userAvatar">
-            <span class="status-indicator" title="Online"></span>
-          </div>
-          <div class="profile-title">
-            <div class="greeting-badge" id="timeGreeting">
-              <i class="fa-regular fa-sun"></i> 早安，歡迎光臨
+      
+      <!-- Left Column: Profile & Skills -->
+      <div class="left-column">
+        <!-- Profile Hero Card -->
+        <section class="card profile-card" id="profileCard">
+          <div class="card-glass-glow"></div>
+          <div class="profile-header">
+            <div class="avatar-wrapper">
+              <img src="assets/avatar.jpg" alt="吳誠哲的大頭照" class="avatar-img" id="userAvatar">
+              <span class="status-indicator" title="Online"></span>
             </div>
-            <h1 class="user-name">吳誠哲</h1>
-            <p class="user-subtitle">Wu Cheng-Che &bull; Software Developer & Tech Craftsman</p>
-          </div>
-        </div>
-
-        <div class="profile-bio">
-          <p>歡迎來到我的個人專頁。結合簡約設計、精準時間計算與現代網頁技術的極致體驗。</p>
-        </div>
-
-        <div class="profile-tags">
-          <span class="tag"><i class="fa-solid fa-code"></i> Frontend</span>
-          <span class="tag"><i class="fa-solid fa-microchip"></i> System Architecture</span>
-          <span class="tag"><i class="fa-solid fa-clock"></i> Precision Time</span>
-          <span class="tag"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX Design</span>
-        </div>
-
-        <div class="social-links">
-          <a href="#" class="social-btn" id="githubLink" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="#" class="social-btn" id="linkedinLink" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" class="social-btn" id="emailLink" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#" class="social-btn" id="shareBtn" title="分享此頁面"><i class="fa-solid fa-share-nodes"></i></a>
-        </div>
-      </section>
-
-      <!-- Main Live Clock Card -->
-      <section class="card clock-hero-card" id="clockHeroCard">
-        <div class="card-header">
-          <div class="card-title-group">
-            <i class="fa-solid fa-clock-rotate-left card-icon"></i>
-            <h2>即時時間與日期</h2>
-          </div>
-          <span class="live-pill"><span class="pulse-dot"></span> LIVE</span>
-        </div>
-
-        <div class="clock-display-wrapper">
-          <!-- Main Digital Clock -->
-          <div class="digital-clock" id="mainDigitalClock">
-            <div class="time-main">
-              <span id="clockHours">00</span><span class="colon">:</span><span id="clockMinutes">00</span><span
-                class="colon">:</span><span id="clockSeconds">00</span>
+            <div class="profile-title">
+              <div class="greeting-badge" id="timeGreeting">
+                <i class="fa-regular fa-sun"></i> 早安，歡迎蒞臨
+              </div>
+              <h1 class="user-name">吳誠哲</h1>
+              <p class="user-dept-badge">
+                <span><i class="fa-solid fa-graduation-cap"></i> 資工系</span>
+                <span class="dot-sep">&bull;</span>
+                <span><i class="fa-solid fa-bed"></i> 專長：休息</span>
+              </p>
             </div>
-            <div class="time-suffix-wrapper">
-              <span id="clockAmpm" class="ampm-text">AM</span>
-              <span id="clockMillis" class="millis-text">.000</span>
+          </div>
+          
+          <!-- 簡短自我介紹 -->
+          <div class="profile-bio">
+            <div class="bio-tag"><i class="fa-regular fa-comment-dots"></i> 簡短自我介紹</div>
+            <p class="bio-quote">「我是吳誠哲：你好」</p>
+            <p class="bio-desc">
+              就讀資工系，喜愛簡約洗鍊的系統架構與技術實作。在專注寫 code 與研究技術之餘，深刻認同「適度休息」才是保持高效率與長遠創造力的關鍵專長。
+            </p>
+          </div>
+
+          <!-- 個人基本資訊清單 -->
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-user"></i> 姓名</span>
+              <span class="info-value">吳誠哲</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-laptop-code"></i> 科系</span>
+              <span class="info-value">資工系 (CS)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-star"></i> 專長</span>
+              <span class="info-value highlight-expertise">資工系、休息</span>
             </div>
           </div>
 
-          <!-- Date & Calendar Badge -->
-          <div class="date-banner" id="dateBanner">
-            <div class="date-item main-date">
-              <i class="fa-regular fa-calendar-days"></i>
-              <span id="fullDateText">2026 年 09 月 16 日</span>
+          <!-- 專業技能 (至少 3 項技能) -->
+          <div class="skills-block">
+            <h3 class="skills-heading"><i class="fa-solid fa-layer-group"></i> 專業技能 (Skills)</h3>
+            <div class="skills-list">
+              <!-- Skill 1: Python -->
+              <div class="skill-item">
+                <div class="skill-head">
+                  <span class="skill-title"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="skill-tag-level">資料分析 & 模型開發</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-inner python-bar"></div></div>
+              </div>
+
+              <!-- Skill 2: C / C++ -->
+              <div class="skill-item">
+                <div class="skill-head">
+                  <span class="skill-title"><i class="fa-solid fa-code"></i> C / C++</span>
+                  <span class="skill-tag-level">系統程式 & 高效能演算法</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-inner cpp-bar"></div></div>
+              </div>
+
+              <!-- Skill 3: Machine Learning -->
+              <div class="skill-item">
+                <div class="skill-head">
+                  <span class="skill-title"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                  <span class="skill-tag-level">模型訓練 & 特徵工程</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-inner ml-bar"></div></div>
+              </div>
             </div>
-            <div class="date-item day-of-week">
-              <span id="dayOfWeekText">星期三</span>
+          </div>
+
+          <!-- 社群連結 -->
+          <div class="social-links">
+            <a href="https://github.com/cheeefds" target="_blank" class="social-btn" id="githubLink" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://cheeefds.github.io/0916/" target="_blank" class="social-btn" id="demoLink" title="Live Demo"><i class="fa-solid fa-globe"></i></a>
+            <a href="mailto:contact@example.com" class="social-btn" id="emailLink" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="social-btn" id="shareBtn" title="分享此頁面"><i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Live Clock, Projects & Tools -->
+      <div class="right-column">
+        
+        <!-- Main Live Clock Card -->
+        <section class="card clock-hero-card" id="clockHeroCard">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-clock-rotate-left card-icon"></i>
+              <h2>即時時間與日期</h2>
             </div>
-            <div class="date-item timezone-info">
-              <i class="fa-solid fa-globe"></i>
-              <span id="timezoneText">Asia/Taipei (UTC+8)</span>
+            <span class="live-pill"><span class="pulse-dot"></span> LIVE</span>
+          </div>
+
+          <div class="clock-display-wrapper">
+            <!-- Main Digital Clock -->
+            <div class="digital-clock" id="mainDigitalClock">
+              <div class="time-main">
+                <span id="clockHours">00</span><span class="colon">:</span><span id="clockMinutes">00</span><span class="colon">:</span><span id="clockSeconds">00</span>
+              </div>
+              <div class="time-suffix-wrapper">
+                <span id="clockAmpm" class="ampm-text">AM</span>
+                <span id="clockMillis" class="millis-text">.000</span>
+              </div>
+            </div>
+
+            <!-- Date & Calendar Badge -->
+            <div class="date-banner" id="dateBanner">
+              <div class="date-item main-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span id="fullDateText">2026 年 09 月 16 日</span>
+              </div>
+              <div class="date-item day-of-week">
+                <span id="dayOfWeekText">星期三</span>
+              </div>
+              <div class="date-item timezone-info">
+                <i class="fa-solid fa-globe"></i>
+                <span id="timezoneText">Asia/Taipei (UTC+8)</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Clock Details Grid -->
-        <div class="clock-metrics-grid">
-          <div class="metric-box">
-            <span class="metric-label">今年剩餘百分比</span>
-            <div class="progress-bar-container">
-              <div class="progress-fill" id="yearProgressFill"></div>
+          <!-- Clock Details Grid -->
+          <div class="clock-metrics-grid">
+            <div class="metric-box">
+              <span class="metric-label">今年剩餘百分比</span>
+              <div class="progress-bar-container">
+                <div class="progress-fill" id="yearProgressFill"></div>
+              </div>
+              <span class="metric-value" id="yearProgressText">70.8%</span>
             </div>
-            <span class="metric-value" id="yearProgressText">70.8%</span>
-          </div>
 
-          <div class="metric-box">
-            <span class="metric-label">今日已過</span>
-            <div class="progress-bar-container">
-              <div class="progress-fill" id="dayProgressFill"></div>
+            <div class="metric-box">
+              <span class="metric-label">今日已過</span>
+              <div class="progress-bar-container">
+                <div class="progress-fill" id="dayProgressFill"></div>
+              </div>
+              <span class="metric-value" id="dayProgressText">44.7%</span>
             </div>
-            <span class="metric-value" id="dayProgressText">42.5%</span>
-          </div>
 
-          <div class="metric-box">
-            <span class="metric-label">Unix 時間戳記</span>
-            <span class="metric-value font-mono" id="unixTimestamp">1789524753</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- World Clock & Interactive Tools Card -->
-      <section class="card world-clock-card" id="worldClockCard">
-        <div class="card-header">
-          <div class="card-title-group">
-            <i class="fa-solid fa-earth-asia card-icon"></i>
-            <h2>世界主要城市時間</h2>
-          </div>
-        </div>
-
-        <div class="world-cities-grid">
-          <div class="city-item" id="cityTaipei">
-            <div class="city-info">
-              <span class="city-name">台北 (Taipei)</span>
-              <span class="city-tz">UTC+8</span>
+            <div class="metric-box">
+              <span class="metric-label">Unix 時間戳記</span>
+              <span class="metric-value font-mono" id="unixTimestamp">1789526661</span>
             </div>
-            <span class="city-time font-mono" id="timeTaipei">10:12:33</span>
           </div>
+        </section>
 
-          <div class="city-item" id="cityTokyo">
-            <div class="city-info">
-              <span class="city-name">東京 (Tokyo)</span>
-              <span class="city-tz">UTC+9</span>
+        <!-- 🚀 3. Projects 作品與專案展示區塊 -->
+        <section class="card projects-card" id="projectsCard">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-rocket card-icon rocket-icon"></i>
+              <h2>🚀 3. Projects 作品專案</h2>
             </div>
-            <span class="city-time font-mono" id="timeTokyo">11:12:33</span>
+            <span class="live-pill"><span class="pulse-dot"></span> SHOWCASE</span>
           </div>
 
-          <div class="city-item" id="cityLondon">
-            <div class="city-info">
-              <span class="city-name">倫敦 (London)</span>
-              <span class="city-tz">UTC+1</span>
+          <div class="projects-list">
+            <!-- Project 1: 即時動態個人專頁 -->
+            <div class="project-item">
+              <div class="project-header">
+                <div class="project-title-area">
+                  <h3 class="project-name">個人即時動態時鐘與資訊入口網</h3>
+                  <span class="project-tag-status current">已上線</span>
+                </div>
+                <div class="project-links-top">
+                  <a href="https://github.com/cheeefds/0916" target="_blank" class="project-btn" title="查看 GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                  <a href="https://cheeefds.github.io/0916/" target="_blank" class="project-btn demo" title="開啟 Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+              <p class="project-desc">
+                專為吳誠哲打造之個人數位品牌門面。整合現代毛玻璃 (Glassmorphism) 視覺體系、20fps 毫秒級高精度動態時鐘運算、跨時區世界時間與全響應式互動體驗。
+              </p>
+              <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3 (Glassmorphism)</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Intl API</span>
+                <span class="tech-pill">GitHub Pages</span>
+              </div>
             </div>
-            <span class="city-time font-mono" id="timeLondon">03:12:33</span>
-          </div>
 
-          <div class="city-item" id="cityNewYork">
-            <div class="city-info">
-              <span class="city-name">紐約 (New York)</span>
-              <span class="city-tz">UTC-4</span>
+            <!-- Project 2: 本學期預計完成專案 (Machine Learning & C++) -->
+            <div class="project-item">
+              <div class="project-header">
+                <div class="project-title-area">
+                  <h3 class="project-name">智慧時序數據分析與異常偵測系統</h3>
+                  <span class="project-tag-status planned">本學期預計完成</span>
+                </div>
+                <div class="project-links-top">
+                  <a href="https://github.com/cheeefds" target="_blank" class="project-btn" title="查看 GitHub Repository"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+              </div>
+              <p class="project-desc">
+                結合資工系專長，以 Python 深度學習架構結合 C/C++ 演算法加速模組，針對時間序列數據進行特徵提取、異常模式分類與未來趨勢智慧預測。
+              </p>
+              <div class="project-tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">C / C++</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">PyTorch / Scikit-Learn</span>
+              </div>
             </div>
-            <span class="city-time font-mono" id="timeNewYork">22:12:33</span>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Interactive Timer & Quote Card -->
-      <section class="card quote-card" id="quoteCard">
-        <div class="card-header">
-          <div class="card-title-group">
-            <i class="fa-solid fa-quote-left card-icon"></i>
-            <h2>每日時間感悟</h2>
+        <!-- World Clock Card -->
+        <section class="card world-clock-card" id="worldClockCard">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-earth-asia card-icon"></i>
+              <h2>世界主要城市時間</h2>
+            </div>
           </div>
-        </div>
-        <div class="quote-content">
-          <p id="quoteText">「時間是世界上最平等的資源，我們如何度過它，便如何塑造自己。」</p>
-          <span class="quote-author">— 吳誠哲 的時間座右銘</span>
-        </div>
-        <div class="quote-actions">
-          <button id="newQuoteBtn" class="action-btn">
-            <i class="fa-solid fa-shuffle"></i> 換一句感悟
-          </button>
-        </div>
-      </section>
 
+          <div class="world-cities-grid">
+            <div class="city-item" id="cityTaipei">
+              <div class="city-info">
+                <span class="city-name">台北 (Taipei)</span>
+                <span class="city-tz">UTC+8</span>
+              </div>
+              <span class="city-time font-mono" id="timeTaipei">10:44:21</span>
+            </div>
+
+            <div class="city-item" id="cityTokyo">
+              <div class="city-info">
+                <span class="city-name">東京 (Tokyo)</span>
+                <span class="city-tz">UTC+9</span>
+              </div>
+              <span class="city-time font-mono" id="timeTokyo">11:44:21</span>
+            </div>
+
+            <div class="city-item" id="cityLondon">
+              <div class="city-info">
+                <span class="city-name">倫敦 (London)</span>
+                <span class="city-tz">UTC+1</span>
+              </div>
+              <span class="city-time font-mono" id="timeLondon">03:44:21</span>
+            </div>
+
+            <div class="city-item" id="cityNewYork">
+              <div class="city-info">
+                <span class="city-name">紐約 (New York)</span>
+                <span class="city-tz">UTC-4</span>
+              </div>
+              <span class="city-time font-mono" id="timeNewYork">22:44:21</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quote Card -->
+        <section class="card quote-card" id="quoteCard">
+          <div class="card-header">
+            <div class="card-title-group">
+              <i class="fa-solid fa-quote-left card-icon"></i>
+              <h2>每日時間感悟</h2>
+            </div>
+          </div>
+          <div class="quote-content">
+            <p id="quoteText">「時間是世界上最平等的資源，我們如何度過它，便如何塑造自己。」</p>
+            <span class="quote-author">— 吳誠哲 的時間座右銘</span>
+          </div>
+          <div class="quote-actions">
+            <button id="newQuoteBtn" class="action-btn">
+              <i class="fa-solid fa-shuffle"></i> 換一句感悟
+            </button>
+          </div>
+        </section>
+
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
       <p>&copy; <span id="currentYear">2026</span> 吳誠哲. All rights reserved.</p>
-      <p class="footer-subtext">頁面即時時間驅動中 &bull; Local System Time Engine</p>
+      <p class="footer-subtext">資工系 &bull; 專長：資工系、休息 &bull; 即時時間驅動中</p>
     </footer>
   </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>

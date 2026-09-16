@@ -1,6 +1,6 @@
 # 吳誠哲 個人首頁 & 即時動態時鐘 (Wu Cheng-Che Personal Hub)
 
-✨ **一個結合現代毛玻璃視覺美學 (Glassmorphism)、高精度即時時鐘與個人簡介的動態個人首頁。**
+✨ **一個結合現代毛玻璃視覺美學 (Glassmorphism)、高精度即時時鐘、個人簡介與作品集展示的動態個人首頁。**
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -17,33 +17,63 @@
 
 ---
 
-## 📖 簡介 (Overview)
+## 👤 個人簡介 (About Me)
 
-本專頁專為 **吳誠哲 (Wu Cheng-Che)** 設計，打造極致流暢的個人品牌數位門面。除了展現個人專業領域與社群連結之外，核心整合了高精度的動態時間計算引擎，讓時間不只是數字，更成為視覺化的生活指標。
+- **姓名**：吳誠哲 (Wu Cheng-Che)
+- **頭像**：專屬個人科技頭像 ([assets/avatar.jpg](assets/avatar.jpg))
+- **科系 / 專長**：**資工系**、**休息**
+- **簡短自我介紹**：
+  > **「我是吳誠哲：你好」**  
+  就讀資工系，喜愛簡約洗鍊的系統架構與技術實作。在專注寫 code 與研究技術之餘，深刻認同「適度休息」才是保持高效率與長遠創造力的關鍵專長。
 
 ---
 
-## 🌟 核心功能 (Key Features)
+## ⚡ 專業技能 (Skills)
 
-### 1. 👤 個人品牌卡片 (Profile Hero)
-- **智慧時段招呼**：系統依據目前時間自動顯示「早安」、「午安」或「晚安」。
-- **極致視覺細節**：專屬質感頭像、呼吸燈狀態指示與主題標籤。
-- **社群快捷連結**：整合 GitHub、LinkedIn、Email 與一鍵分享功能。
+至少包含 3 項核心專業技能：
 
-### 2. ⏱️ 實時高精度時鐘 (Live Precision Clock)
+1. **Python**
+   - 熟悉演算法實作、資料分析、後端串接與自動化腳本撰寫。
+2. **C / C++**
+   - 系統底層程式設計、資料結構與高效能演算法運算。
+3. **Machine Learning**
+   - 機器學習演算法、資料特徵工程與模型訓練評估。
+
+---
+
+## 🚀 3. Projects (作品與專案展示)
+
+### 📌 Project 1: 個人即時動態時鐘與資訊入口網 (Personal Portal & Clock Hub)
+- **Project Name**：個人即時動態時鐘與資訊入口網
+- **Project Description**：專為吳誠哲打造之個人數位品牌門面。整合現代毛玻璃 (Glassmorphism) 視覺體系、20fps 毫秒級高精度動態時鐘運算、跨時區世界時間與全響應式互動體驗。
+- **使用技術**：`HTML5`、`CSS3 (Glassmorphism, RWD)`、`JavaScript (ES6+)`、`Intl API`、`GitHub Pages`
+- **GitHub Link**：[https://github.com/cheeefds/0916](https://github.com/cheeefds/0916)
+- **Live Demo**：[https://cheeefds.github.io/0916/](https://cheeefds.github.io/0916/)
+
+### 📌 Project 2: 智慧時序數據分析與異常偵測系統 (Smart Time-Series ML Model) *(本學期預計完成)*
+- **Project Name**：智慧時序數據分析與異常偵測系統
+- **Project Description**：結合資工系專業，以 Python 深度學習架構結合 C/C++ 演算法加速模組，針對時間序列數據進行特徵提取、異常模式識別與未來趨勢智慧預測。
+- **使用技術**：`Python`、`C / C++`、`Machine Learning`、`PyTorch / Scikit-Learn`
+- **GitHub Link**：[https://github.com/cheeefds](https://github.com/cheeefds)
+
+---
+
+## 🌟 核心功能亮點 (Key Features)
+
+### 1. ⏱️ 實時高精度時鐘 (Live Precision Clock)
 - **毫秒級數字時鐘**：流暢顯示時、分、秒與毫秒演進。
 - **雙制式切換**：支援 24 小時制 (`24H`) 與 12 小時制 (`12H AM/PM`) 自由切換。
 - **完整日期與時區**：支援 Traditional Chinese 格式（年/月/日/星期）與 `Asia/Taipei` (UTC+8) 時區顯示。
 
-### 3. 📊 時間維度與指標 (Time Metrics)
+### 2. 📊 時間維度與指標 (Time Metrics)
 - **年度進度條 (Year Progress %)**：即時算出一整年已過去的百分比。
 - **今日進度條 (Day Progress %)**：計算今日已度過的時間比例。
 - **Unix Timestamp**：提供開發者常用的秒級 Unix 時間戳記。
 
-### 4. 🌍 世界主要城市時鐘 (World Clock Grid)
+### 3. 🌍 世界主要城市時鐘 (World Clock Grid)
 - 內建四區即時時鐘連動：**台北 (Taipei)**、**東京 (Tokyo)**、**倫敦 (London)**、**紐約 (New York)**。
 
-### 5. 🎨 視覺美學與切換 (Design System)
+### 4. 🎨 視覺美學與主題切換 (Design System)
 - **深/淺色主題 toggle**：可隨時在「賽博深色毛玻璃 (Cyberpunk Dark)」與「極簡純白 (Modern Light)」主題間切換。
 - **每日時間感悟**：收錄時間金句，提供互動換句體驗。
 
@@ -136,12 +166,12 @@ flowchart TD
 
 | 階段 | 工作重點 | 具體成果與產出 |
 | :--- | :--- | :--- |
-| **一、需求分析** | 明確個人品牌與功能訴求 | 定義核心展示項目（吳誠哲個人檔案、毫秒級即時時鐘、多時區世界時間、日期與進度指標）。 |
+| **一、需求分析** | 明確個人品牌與功能訴求 | 定義核心展示項目（姓名：吳誠哲、科系：資工系、專長：休息、自我介紹、3項技能、專案作品、毫秒級時鐘與指標）。 |
 | **二、視覺與素材** | 建立暗黑科技與毛玻璃風格 | 產生專屬質感深色霓虹幾何背景 (`hero_bg.jpg`) 與個人頭像風格圖 (`avatar.jpg`)。 |
 | **三、版面架構 (HTML/CSS)** | 建立語意化標籤與響應式排版 | 使用 HTML5 語意標籤與 CSS Grid/Flexbox 完成卡片網格；採用 `backdrop-filter` 實現現代毛玻璃 (Glassmorphism) 效果。 |
 | **四、功能邏輯 (JavaScript)** | 即時運算與互動機制實作 | 1. 20fps 高精度即時時鐘（包含毫秒顯示與 12H/24H 切換）。<br>2. 智慧時段問候語（早安 / 午安 / 晚安）。<br>3. 年度與當日時間進度百分比計算。<br>4. 跨時區世界時鐘（台北、東京、倫敦、紐約）。<br>5. 深色／淺色主題即時切換系統。<br>6. 時間感悟語錄隨機切換。 |
 | **五、成果部署** | 靜態網站發布 | 透過 GitHub Pages 發布上線，提供公開線上體驗網址。 |
-| **六、說明文件** | 整理作業成果與文檔 | 完成結構化 `README.md`，納入 Live Demo 連結、展示截圖、技術棧與開發流程總結。 |
+| **六、說明文件** | 整理作業成果與文檔 | 完成結構化 `README.md`，納入個人資訊、技能清單、專案展示、Live Demo 連結、展示截圖與開發流程總結。 |
 
 ---
 
