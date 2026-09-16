@@ -8,22 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const clockSecondsEl = document.getElementById('clockSeconds');
   const clockAmpmEl = document.getElementById('clockAmpm');
   const clockMillisEl = document.getElementById('clockMillis');
-  
+
   const fullDateTextEl = document.getElementById('fullDateText');
   const dayOfWeekTextEl = document.getElementById('dayOfWeekText');
   const timezoneTextEl = document.getElementById('timezoneText');
-  
+
   const yearProgressFillEl = document.getElementById('yearProgressFill');
   const yearProgressTextEl = document.getElementById('yearProgressText');
   const dayProgressFillEl = document.getElementById('dayProgressFill');
   const dayProgressTextEl = document.getElementById('dayProgressText');
   const unixTimestampEl = document.getElementById('unixTimestamp');
-  
+
   const timeGreetingEl = document.getElementById('timeGreeting');
   const formatBadgeEl = document.getElementById('formatBadge');
   const clockFormatBtn = document.getElementById('clockFormatBtn');
   const themeToggleBtn = document.getElementById('themeToggleBtn');
-  
+
   const timeTaipeiEl = document.getElementById('timeTaipei');
   const timeTokyoEl = document.getElementById('timeTokyo');
   const timeLondonEl = document.getElementById('timeLondon');
@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Update Main Clock & Metrics
   function updateClock() {
     const now = new Date();
-    
+
     // Hours, Minutes, Seconds, Millis
     let rawHours = now.getHours();
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
     const millis = now.getMilliseconds();
-    
+
     let displayHours = rawHours;
     let ampm = '';
 
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const month = now.getMonth() + 1;
     const date = now.getDate();
     const dayIndex = now.getDay();
-    
+
     fullDateTextEl.textContent = `${year} 年 ${padZero(month)} 月 ${padZero(date)} 日`;
     dayOfWeekTextEl.textContent = daysOfWeek[dayIndex];
-    
+
     if (currentYearEl) currentYearEl.textContent = year;
 
     // Timezone
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       greetingText = '晚安';
     }
 
-    timeGreetingEl.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${greetingText}，歡迎蒞臨`;
+    timeGreetingEl.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${greetingText}，歡迎光臨`;
   }
 
   // Progress Metrics
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
     document.body.classList.toggle('dark-theme');
-    
+
     const icon = themeToggleBtn.querySelector('i');
     if (document.body.classList.contains('light-theme')) {
       icon.className = 'fa-solid fa-sun';
